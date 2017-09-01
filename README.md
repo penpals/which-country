@@ -13,13 +13,13 @@ If you are interested in more general solution, try [which-polygon](https://gith
 # Usage
 
 ```
-npm install which-country
+npm install pp-which-country
 ```
 
 and then:
 
 ```javascript
-var wc = require('which-country');
+var wc = require('pp-which-country');
 
 // pass [lng, lat]
 console.log(wc([37, 55])); // RUS
