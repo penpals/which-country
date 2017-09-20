@@ -11,7 +11,8 @@ data.forEach(function (line) {
   for (var i = 1; i < parts.length; i++) {
     var part = parts[i];
     var coords = part.split(',').map(Number);
+    var foundId = country([coords[1], coords[0]])
 
-    assert.equal(country([coords[1], coords[0]]), id);
+    assert.equal(foundId, id, `expected country ${id} but got ${foundId} at ${part}`);
   }
 });
